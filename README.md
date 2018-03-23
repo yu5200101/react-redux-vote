@@ -1,6 +1,10 @@
+>打开cmd窗口使用以下命令跑环境
 
+>`npm install`或者`yarn install`
+
+>使用`yarn start`命令开启客户端
             
-###真实项目中应用redux/react-redux的开发流程
+### 真实项目中应用redux/react-redux的开发流程
 >redux是用来进行状态统一管理的组件
 >react-redux是把redux进一步封装，使其在react项目中可以快速应用
 >真实项目中我们如果基于react框架开发，都会把redux/react-redux结合在一起来使用
@@ -8,10 +12,10 @@
 - 登录/注册成功后，我们可以把个人的基本信息或者权限信息（很少的数据）存放在redux中进行管理
 - 在电商类产品，购物信息（加入到购物车中的内容），我们一般也放在redux中管理，（个人建议存放在redux容器中的购物信息，基本上是商品的标识，id，或者其他标识以及数量等少量信息即可，没必要把所有商品的信息存储进来）
 
-###1、安装组件
+### 1、安装组件
 >$ yarn add redux react-redux 或者$ npm i redux react-redux --save-dev 
 
-###2、搭建项目目录
+### 2、搭建项目目录
 我们以一个小投票的案例来分析
 我们是基于create-react-app构建的整个项目，其他的文件目录这里就不编写了，只把src中需
 要的内容列举出来
@@ -31,7 +35,7 @@
   |-index.js[项目的入口]，在这里实现JSX元素的渲染
   我们真实项目中为了方便管理，我们把每一个功能版块都建立对应的action和reducer，最后再由index中把多个个action和reducer进行合并并处理
   
-  ###3、把store中需要编写的逻辑进行处理
+  ### 3、把store中需要编写的逻辑进行处理
   
   ### 1)定义所有的行为标识
   >action-types.js
